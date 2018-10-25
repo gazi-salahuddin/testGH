@@ -12,24 +12,18 @@
         <module>netstuitetimereporting</module>
     </modules>
 
-    <repositories>
+    <distributionManagement>
         <repository>
-            <releases>
-                <enabled>false</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-            <id>codehausSnapshots</id>
-            <name>Codehaus Snapshots</name>
-            <url>http://snapshots.maven.codehaus.org/maven2</url>
-            <layout>default</layout>
+            <id>central</id>
+            <name>plugins-releases</name>
+            <url>http://serverip:8081/artifactory/plugins-release-local</url>
         </repository>
-    </repositories>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>plugins-snapshot</name>
+            <url>http://serverip:8081/artifactory/plugins-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
