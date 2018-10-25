@@ -10,8 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="netstuitetimereporting" target="1.5" />
-      <module name="netsuite" target="1.5" />
+      <module name="netstuitetimereporting" target="1.8" />
+      <module name="netsuite" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
